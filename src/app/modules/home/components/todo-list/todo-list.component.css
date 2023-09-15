@@ -1,0 +1,40 @@
+@import url(../../../../../../src/styles.css);
+div {
+    width: 100%;
+    min-height: 250px;
+    background-color: var(--background-segunda-cor);
+    margin-top: 20px;
+    /* Descolar a parte de cima */
+}
+
+ul {
+    padding: 20px;
+}
+
+ul li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+input[type="checkbox"] {
+    width: 5%;
+}
+
+input[type="text"] {
+    width: 80%;
+    padding: 5px 10px;
+    border: none;
+    font-size: 16px;
+    color: var(--texto-primeira-cor);
+}
+
+input[type="text"].checked {
+    text-decoration: line-through;
+}
+
+button {
+    width: 5%;
+    background: none;
+    border: none;
+}
