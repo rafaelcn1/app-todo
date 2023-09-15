@@ -1,0 +1,17 @@
+@import url(../../../../../../src/styles.css);
+.container {
+    display: flex;
+    justify-content: center;
+    margin-top: -40px;
+    align-items: center;
+}
+
+.container button {
+    width: 60%;
+    border: none;
+    background: var(--danger-color);
+    font-size: 16px;
+    color: var(--texto-segunda-cor);
+    padding: 10px;
+    border-radius: 50px;
+}

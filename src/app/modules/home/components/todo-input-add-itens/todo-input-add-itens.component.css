@@ -19,6 +19,3 @@
         color: var(--texto-segunda-cor);
     }
 }
-
-
-/* Tudo que está dentro do :host, será referenciado no caso o <app-todo-input-add-itens/>*/
