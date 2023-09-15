@@ -1,0 +1,24 @@
+@import url(../../../../../../src/styles.css);
+.container {
+    display: flex;
+    justify-content: center;
+    margin-top: -20px;
+}
+
+.container input {
+    width: 80%;
+    border: none;
+    background: var(--background-terceira-cor);
+    font-size: 16px;
+    color: var(--texto-segunda-cor);
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+    /* Para o elemento nao se esticar */
+    &::placeholder {
+        color: var(--texto-segunda-cor);
+    }
+}
+
+
+/* Tudo que está dentro do :host, será referenciado no caso o <app-todo-input-add-itens/>*/
