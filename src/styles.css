@@ -1,5 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
 :root {
     --primeira-cor: #AF7EEB;
     --segunda-cor: ##939CBD;
@@ -12,6 +13,18 @@
     --danger-color: red;
 }
 
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto';
+    font-weight: 400;
+}
+
 body {
-    background-color: var(--background-terceira-cor);
+    background-color: var(--background-primeira-cor);
+}
+
+.container {
+    width: 350px;
+    margin: 50px auto;
 }
