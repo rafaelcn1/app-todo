@@ -24,6 +24,11 @@ body {
     background-color: var(--background-primeira-cor);
 }
 
+.container {
+    width: 350px;
+    margin: 50px auto;
+}
+
 ul {
     list-style: none;
     /* Resete em todo o stylo nas listas, para remover os pontos o LI */
@@ -33,9 +38,4 @@ textarea:focus,
 input:focus,
 button {
     outline: none;
-}
-
-.container {
-    width: 350px;
-    margin: 50px auto;
 }

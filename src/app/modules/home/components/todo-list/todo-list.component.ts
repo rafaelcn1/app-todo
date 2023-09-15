@@ -12,4 +12,12 @@ export class TodoListComponent implements OnInit {
     { task: 'Minha segunda tarefa', checked: false },
   ];
   ngOnInit(): void {}
+
+  clicar(tarefa: TaskList): void {
+    this.tarefaExecutada(tarefa);
+  }
+
+  tarefaExecutada(tarefa: TaskList): void {
+    console.log(tarefa);
+  }
 }

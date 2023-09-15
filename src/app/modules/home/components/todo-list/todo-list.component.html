@@ -1,13 +1,13 @@
-<div>
-    <ul>
+<div [ngClass]="{'listaVazia': !taskList.length}">
+    <ul *ngIf="taskList.length">
         <li *ngFor="let tarefa of taskList; let i = index">
-            <input type="checkbox" [(ngModel)]="tarefa.checked">
+            <input id="checkbox" (click)="clicar(tarefa)" type="checkbox" [(ngModel)]="tarefa.checked">
             <input type="text" [(ngModel)]="tarefa.task">
-            <button><i class="fa fa-trash fa-2x"></i></button>
+            <button><i class="fa fa-trash fa-2x"></i></button> {{ tarefa | json}}
         </li>
     </ul>
 
 
 </div>
 <app-todo-input-add-itens></app-todo-input-add-itens>
-<app-todo-button-delete-all></app-todo-button-delete-all>
+<app-todo-button-delete-all *ngIf="taskList.length"></app-todo-button-delete-all>

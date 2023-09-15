@@ -38,3 +38,16 @@ button {
     background: none;
     border: none;
 }
+
+i {
+    color: var(--danger-color);
+}
+
+.listaVazia {
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSap1L6WCV44cpt-MHMn26UILfKDl5o-FEs2PTMF9p8_Vi8ZUEvOOl4vOWTXEKJuDtcygo&usqp=CAU');
+    background-repeat: no-repeat;
+    background-position: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
