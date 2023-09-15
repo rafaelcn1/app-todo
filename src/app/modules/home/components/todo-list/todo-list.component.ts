@@ -13,11 +13,27 @@ export class TodoListComponent implements OnInit {
   ];
   ngOnInit(): void {}
 
-  clicar(tarefa: TaskList): void {
-    this.tarefaExecutada(tarefa);
+  /* Metodo para deletar uma tarefa, que recebe um number, que é o index do array taskList */
+  deletarTarefa(event: number): void {
+    var confirmacao = window.confirm(
+      'Deseja deletar a tarefa: ' + this.taskList[event].task + ' ?'
+    );
+    if (confirmacao) {
+      console.log(confirmacao);
+      this.taskList.splice(event, 1);
+    }
   }
 
-  tarefaExecutada(tarefa: TaskList): void {
-    console.log(tarefa);
+  deletarTodasTarefas() {
+    if (this.taskList.length > 1) {
+      alert('Existem ' + this.taskList.length + ' tarefas cadastradas!');
+    } else {
+      alert('Existe ' + this.taskList.length + ' tarefa cadastrada!');
+    }
+
+    var confirmacao = window.confirm('Deseja deletar todas as tarefas?');
+    if (confirmacao) {
+      this.taskList = [];
+    }
   }
 }
