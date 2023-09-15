@@ -1,1 +1,17 @@
 /* You can add global styles to this file, and also import other style files */
+
+:root {
+    --primeira-cor: #AF7EEB;
+    --segunda-cor: ##939CBD;
+    --terceira-cor: #FFFFFF;
+    --background-primeira-cor: #E3E9FF;
+    --background-segunda-cor: var(--terceira-cor);
+    --background-terceira-cor: var(--primeira-cor);
+    --primary-text-color: var(--segunda-cor);
+    --secondary-text-color: var(--terceira-cor);
+    --danger-color: red;
+}
+
+body {
+    background-color: var(--background-terceira-cor);
+}
