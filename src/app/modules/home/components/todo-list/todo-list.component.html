@@ -3,11 +3,11 @@
         <li *ngFor="let tarefa of taskList; let i = index">
             <input [(ngModel)]="tarefa.checked" type="checkbox" [(ngModel)]="tarefa.checked">
             <input [ngClass]="{'checked': tarefa.checked}" type="text" [(ngModel)]="tarefa.task">
-            <button (click)="deletarTarefa(i)"><i class="fa fa-trash fa-2x"></i></button> {{ tarefa | json}}
+            <button (click)="deletarTarefa(i)"><i class="fa fa-trash fa-2x"></i></button>
         </li>
     </ul>
 
 
 </div>
-<app-todo-input-add-itens></app-todo-input-add-itens>
+<app-todo-input-add-itens (emitTarefaTaskList)="setEmitTarefaTaskList($event)"></app-todo-input-add-itens>
 <app-todo-button-delete-all *ngIf="taskList.length" (click)="deletarTodasTarefas()"></app-todo-button-delete-all>

@@ -8,8 +8,8 @@ import { TaskList } from '../../model/task-list';
 })
 export class TodoListComponent implements OnInit {
   public taskList: Array<TaskList> = [
-    { task: 'Minha primeira tarefa', checked: true },
-    { task: 'Minha segunda tarefa', checked: false },
+    //{ task: 'Minha primeira tarefa', checked: true },
+    // { task: 'Minha segunda tarefa', checked: false },
   ];
   ngOnInit(): void {}
 
@@ -35,5 +35,9 @@ export class TodoListComponent implements OnInit {
     if (confirmacao) {
       this.taskList = [];
     }
+  }
+
+  public setEmitTarefaTaskList(event: string) {
+    this.taskList.push({ task: event, checked: false });
   }
 }
